@@ -8,7 +8,7 @@ To answer I’ll quote directly from Selenium themselves:
 
 https://www.seleniumhq.org/
 
-Getting Started
+##Getting Started
 
 To use this example we’ll need a few things
 
@@ -27,15 +27,14 @@ In Visual Studio Code we’ll use the hotkey:
 ```
 CTRL + SHIFT + P
 ```
-In Visual Studio Code we’ll use the hotkey:
-`CTRL + SHIFT + P`
-
 This will pull up the command window where we can type:
 ```
 Git Clone
 ```
 Once you see the clone option go ahead and hit ‘Enter’ and paste in the url below for the GitHub repository.
-`git-----`
+```
+git-----
+```
 
 After it’s done building we can now run the test. To run the test go ahead and click `Run Test` above EscreverNomeDoTeste() and the test should:
   * Open Chrome
