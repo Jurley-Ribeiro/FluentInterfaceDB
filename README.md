@@ -1,13 +1,13 @@
-# FluentInterfaceDB
+# Fluent Interface DB
 
-What is Selenium?
+  ### What is Selenium?
 To answer I’ll quote directly from Selenium themselves:
-
+```
   Selenium automates browsers. That’s it! What you do with that power is entirely up to you. Primarily, it is for automating web applications for testing purposes, but is certainly not limited to just that. Boring web-based administration tasks can (and should!) be automated as well.
   Selenium has the support of some of the largest browser vendors who have taken (or are taking) steps to make Selenium a native part of their browser. It is also the core technology in countless other browser automation tools, APIs and frameworks.
 
 https://www.seleniumhq.org/
-
+```
 Getting Started
 
 To use this example we’ll need a few things
@@ -20,7 +20,7 @@ Don’t worry! They’re all free.
 
 I’ll write this blog post using Visual Studio Code because it’s available for Windows, Mac & Linux but… if you’re on Windows, Visual Studio Community is my preferred IDE and I’d highly recommend it.
 
-### Installing
+### Usage
 
 In Visual Studio Code we’ll use the hotkey:
 
@@ -41,3 +41,11 @@ After it’s done building we can now run the test. To run the test go ahead and
   * Open Chrome
   * Go to www.automationpractice.com
   * Add product (DEFINE PRODUCT NAME) in cart
+  
+  ## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
