@@ -17,14 +17,23 @@ Don’t worry! They’re all free.
 - Google Chrome Web Browser
 - Visual Studio Code (or Community)
 - DotNetCore 2.1
+
 I’ll write this blog post using Visual Studio Code because it’s available for Windows, Mac & Linux but… if you’re on Windows, Visual Studio Community is my preferred IDE and I’d highly recommend it.
 
+### Installing
+
+In Visual Studio Code we’ll use the hotkey:
+
+```
+CTRL + SHIFT + P
+```
 In Visual Studio Code we’ll use the hotkey:
 `CTRL + SHIFT + P`
 
 This will pull up the command window where we can type:
-`Git Clone`
-
+```
+Git Clone
+```
 Once you see the clone option go ahead and hit ‘Enter’ and paste in the url below for the GitHub repository.
 `git-----`
 
