@@ -8,7 +8,7 @@ To answer I’ll quote directly from Selenium themselves:
 
 https://www.seleniumhq.org/
 
-##Getting Started
+  ## Getting Started
 
 To use this example we’ll need a few things
 
