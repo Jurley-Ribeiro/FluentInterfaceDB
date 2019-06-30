@@ -7,7 +7,7 @@ To answer I’ll quote directly from Selenium themselves:
   *Selenium has the support of some of the largest browser vendors who have taken (or are taking) steps to make Selenium a native part of their browser. It is also the core technology in countless other browser automation tools, APIs and frameworks.*
 
 https://www.seleniumhq.org/
-```
+
 Getting Started
 
 To use this example we’ll need a few things
