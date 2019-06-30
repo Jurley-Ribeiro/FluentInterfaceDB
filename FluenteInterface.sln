@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluenteInterface", "FluenteInterface\FluenteInterface.csproj", "{3430E2D4-E352-4027-B768-B55EA973638F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Settings", "Settings", "{19DF12F6-99E2-4C52-8FD2-68849E168C0E}"
+	ProjectSection(SolutionItems) = preProject
+		debug.runsettings = debug.runsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3430E2D4-E352-4027-B768-B55EA973638F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3430E2D4-E352-4027-B768-B55EA973638F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3430E2D4-E352-4027-B768-B55EA973638F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3430E2D4-E352-4027-B768-B55EA973638F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1666F1B5-FAC1-4CA2-B765-6A51ED91A669}
+	EndGlobalSection
+EndGlobal
