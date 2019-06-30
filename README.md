@@ -33,7 +33,7 @@ Git Clone
 ```
 Once you see the clone option go ahead and hit ‘Enter’ and paste in the url below for the GitHub repository.
 ```
-git-----
+https://github.com/Jurley-Ribeiro/FluentInterfaceDB.git
 ```
 
 After it’s done building we can now run the test. To run the test go ahead and click `Run Test` above EscreverNomeDoTeste() and the test should:
