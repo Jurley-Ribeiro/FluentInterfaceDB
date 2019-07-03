@@ -10,6 +10,10 @@ using FluenteInterface.Pages;
 using FluentAssertions;
 using FluenteInterface.Pages.Cart;
 using FluenteInterface.Pages.Authentication;
+using FluenteInterface.Pages.Address;
+using FluenteInterface.Pages.Shipping;
+using FluenteInterface.Pages.Payment;
+using FluenteInterface.Pages.OrderConfirmationPage;
 
 namespace FluenteInterface.Tests
 {
@@ -24,9 +28,16 @@ namespace FluenteInterface.Tests
 
         public SigninPage SigninPage => new SigninPage();
 
+        public AddressPage AddressPage => new AddressPage();
+
+        public ShippingPage ShippingPage => new ShippingPage();
+
+        public PaymentPage PaymentPage => new PaymentPage();
+
+        public OrderConfirmationPage OrderPage => new OrderConfirmationPage();
 
         [TestMethod]
-        public void LogoIsDisplayed()
+        public void PurchaseItemTest()
         {
             //Arrange
             HomePage.Actions()
@@ -43,7 +54,7 @@ namespace FluenteInterface.Tests
                 .GoToAuthentication();
 
             AuthenticationPage.Actions()
-                .SetEmail("user1@jurley.com")
+                .SetEmail(DateTime.Now.Millisecond.ToString() + "@jurley.com")
                 .GoToPersonalFormulary();
 
             SigninPage.Actions()
@@ -57,6 +68,29 @@ namespace FluenteInterface.Tests
                 .SetZipCode()
                 .SetMobilePhone()
                 .Register();
+
+            AddressPage.Verify()
+                .AssertAddressIsCorrect("Av. Bento Gonçalves")
+                .AssertAddressIsCorrect("POA, Kansas 12345")
+                .AssertAddressIsCorrect("United States")
+                .AssertAddressIsCorrect("12345");
+
+            AddressPage.Actions()
+                .GoToShipping();
+
+            ShippingPage.Actions()
+                .AcceptTerms()
+                .GoToPayment();
+
+            PaymentPage.Verify()
+                .PriceIsCorrect("$18.51");
+
+            PaymentPage.Actions()
+                .GoToPayBank();
+
+            OrderPage.Actions().ConfirmOrder();
+
+            OrderPage.Verify().ConfirmationMessageIsDisplayed();
         }
 
     }

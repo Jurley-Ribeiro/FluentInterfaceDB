@@ -19,6 +19,6 @@ namespace FluenteInterface.Pages
         {
             return Driver.FindElement(By.XPath("//a[@title = 'Proceed to checkout']"));
         }
-
+    
     }
 }

@@ -62,6 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Environments\Environment.cs" />
+    <Compile Include="Pages\Address\AddressAction.cs" />
+    <Compile Include="Pages\Address\AddressElements.cs" />
+    <Compile Include="Pages\Address\AddressPage.cs" />
+    <Compile Include="Pages\Address\AddressVerify.cs" />
     <Compile Include="Pages\Authentication\AuthenticationAction.cs" />
     <Compile Include="Pages\Authentication\AuthenticationElements.cs" />
     <Compile Include="Pages\Authentication\AuthenticationPage.cs" />
@@ -74,6 +78,18 @@
     <Compile Include="Pages\HomePage\HomePageElements.cs" />
     <Compile Include="Pages\HomePage\HomePageVerify.cs" />
     <Compile Include="Pages\Base\PageBase.cs" />
+    <Compile Include="Pages\OrderConfirmationPage\OrderConfirmationActions.cs" />
+    <Compile Include="Pages\OrderConfirmationPage\OrderConfirmationElements.cs" />
+    <Compile Include="Pages\OrderConfirmationPage\OrderConfirmationPage.cs" />
+    <Compile Include="Pages\OrderConfirmationPage\OrderConfirmationVerify.cs" />
+    <Compile Include="Pages\Payment\PaymentActions.cs" />
+    <Compile Include="Pages\Payment\PaymentElements.cs" />
+    <Compile Include="Pages\Payment\PaymentPage.cs" />
+    <Compile Include="Pages\Payment\PaymentVerify.cs" />
+    <Compile Include="Pages\Shipping\ShippingActions.cs" />
+    <Compile Include="Pages\Shipping\ShippingElements.cs" />
+    <Compile Include="Pages\Shipping\ShippingPage.cs" />
+    <Compile Include="Pages\Shipping\ShippingVerify.cs" />
     <Compile Include="Pages\Signin\SigninActions.cs" />
     <Compile Include="Pages\Signin\SigninElements.cs" />
     <Compile Include="Pages\Signin\SigninPage.cs" />

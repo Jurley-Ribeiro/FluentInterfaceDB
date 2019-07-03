@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace FluenteInterface.Pages.Signin
@@ -65,6 +66,8 @@ namespace FluenteInterface.Pages.Signin
 
         private IWebElement GetMrRadioButton()
         {
+            //Best implemented with 'Explicit wait'
+            Thread.Sleep(1000);
             return Driver.FindElement(By.Id("uniform-id_gender1"));
         }
 
