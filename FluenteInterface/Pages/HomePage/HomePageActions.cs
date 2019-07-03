@@ -1,4 +1,7 @@
-﻿namespace FluenteInterface.Pages
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
+
+namespace FluenteInterface.Pages
 {
     public class HomePageActions : PageBase
     {
@@ -10,10 +13,18 @@
             return this;
         }
 
-        public HomePageActions ClickLogo()
+        public HomePageActions AddProductToCart()
         {
-            Home.Logo.Click();
+            IJavaScriptExecutor js = (IJavaScriptExecutor)Driver;
+            js.ExecuteScript("arguments[0].click();", Home.Product);
+
+            //Home.Product.Click();
             return this;
+        }
+
+        public void GoToCartSummary ()
+        {
+            Home.ProceedToCheckoutButton.Click();
         }
     }
 }

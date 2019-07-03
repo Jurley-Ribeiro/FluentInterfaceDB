@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using FluenteInterface.Pages;
 using FluentAssertions;
+using FluenteInterface.Pages.Cart;
+using FluenteInterface.Pages.Authentication;
 
 namespace FluenteInterface.Tests
 {
@@ -15,6 +17,12 @@ namespace FluenteInterface.Tests
     public class TestShop : TestBase
     {
         public HomePage HomePage => new HomePage();
+
+        public CartSummaryPage CartPage => new CartSummaryPage();
+
+        public AuthenticationPage AuthenticationPage => new AuthenticationPage();
+
+        public SigninPage SigninPage => new SigninPage();
 
 
         [TestMethod]
@@ -24,16 +32,31 @@ namespace FluenteInterface.Tests
             HomePage.Actions()
                 .GoToUrl();
 
-            //Act
+            HomePage.Actions()
+                .AddProductToCart()
+                .GoToCartSummary();
+            
+            CartPage.Verify()
+              .ProductWasAdd("Faded Short Sleeve T-shirts");
 
-            HomePage.Actions();
+            CartPage.Actions()
+                .GoToAuthentication();
 
+            AuthenticationPage.Actions()
+                .SetEmail("user1@jurley.com")
+                .GoToPersonalFormulary();
 
-            //Assert
-            HomePage.Verify()
-                 .LogoIsDisplayed()
-                 .Should()
-                 .BeTrue();
+            SigninPage.Actions()
+                .SetTitle()
+                .SetFirstName()
+                .SetLastName()
+                .SetPassword()
+                .SetAddress()
+                .SetCity()
+                .SetState()
+                .SetZipCode()
+                .SetMobilePhone()
+                .Register();
         }
 
     }

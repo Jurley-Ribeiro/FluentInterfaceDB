@@ -8,14 +8,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FluenteInterface.Pages
 {
-    [TestClass]
     public class HomePage
     {         
-        public HomePageElements Elements()
-        {
-            return new HomePageElements();
-        }
-
         public HomePageActions Actions()
         {
             return new HomePageActions();
