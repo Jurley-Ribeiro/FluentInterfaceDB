@@ -1,4 +1,5 @@
 # Fluent Interface DB
+This app performs an automated test to verify that the purchase of a product has been completed successfully.
 
   ### What is Selenium?
 To answer I’ll quote directly from Selenium themselves:
@@ -16,30 +17,50 @@ Don’t worry! They’re all free.
 
 - Google Chrome Web Browser
 - Visual Studio Code (or Community)
-- DotNetCore 2.1
+- .NET Core Framework 4.7.2
 
 I’ll write this blog post using Visual Studio Code because it’s available for Windows, Mac & Linux but… if you’re on Windows, Visual Studio Community is my preferred IDE and I’d highly recommend it.
 
 ### Usage
 
-In Visual Studio Code we’ll use the hotkey:
-
-```
-CTRL + SHIFT + P
-```
-This will pull up the command window where we can type:
-```
-Git Clone
-```
-Once you see the clone option go ahead and hit ‘Enter’ and paste in the url below for the GitHub repository.
+Clone the GitHub repository below:
 ```
 https://github.com/Jurley-Ribeiro/FluentInterfaceDB.git
 ```
 
-After it’s done building we can now run the test. To run the test go ahead and click `Run Test` above EscreverNomeDoTeste() and the test should:
-  * Open Chrome
-  * Go to www.automationpractice.com
-  * Add product (DEFINE PRODUCT NAME) in cart
+In Visual Studio Community, we'll use the test configuration file that is in our repository:
+
+```
+Test > Test Settings > Select Test Settings File
+```
+Search for the `debug.runsettings` file in the repository.
+
+ ### Tests Steps
+
+After it’s done building we can now run the test. To run the test go ahead and click `Run Test` above `TestShop` and the test should:
+  * Test case: make a successful purchase. 
+
+  1. Open Chrome and access the website: www.automationpractice.com.
+
+  2. Choose a product in the store: `Faded Short Sleeve T-shirts`.
+
+  3. Add the chosen product in cart.
+
+  4. Create a valid e-mail account (random).
+
+  5. Validate if the product has been correctly added to the cart and continue if all is right.
+
+  6. Make the customer's registration by filling in all the mandatory fields of the forms.
+
+  7. Validate if the address is correct.
+
+  8. Accept the terms of service.
+
+  9. Validate the total purchase value: `$ 18.51`.
+
+  10. Select the bank payment method.
+
+  11. Confirm purchase and validate if successful.
   
   ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
